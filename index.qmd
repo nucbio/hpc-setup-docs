@@ -1,0 +1,21 @@
+---
+title: "hpc-setup"
+---
+
+Installs bioinformatic tools and their full software stack into **one directory**,
+**without root**, on Linux (Debian/Ubuntu/RHEL/Fedora, `x86_64`).
+Every package is available as an [Lmod](https://lmod.readthedocs.io) module.
+
+```bash
+mkdir ~/hpc && cd ~/hpc
+wget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | bash
+```
+
+What gets installed:
+
+1. **Core libraries**: zlib, openssl, libcurl, cairo, glib, ImageMagick, pandoc, ...
+2. **Languages**: R, Python, Rust, Java, Lua
+3. **Bioinformatic tools**: samtools, bowtie2, STAR, gatk, dorado, modkit, ...
+4. **Terminal tools**: nvim, git, bat, eza, fd, ripgrep, tree, zoxide
+
+Full list with versions: [Packages](packages.qmd).

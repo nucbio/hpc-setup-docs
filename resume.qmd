@@ -1,0 +1,23 @@
+---
+title: "Resume and rebuild"
+---
+
+## Resume
+
+If the installation fails, fix the cause and run the same command again in the
+same directory. Finished packages are skipped (`[SKIP]`), the failed one is built again.
+
+## Rebuild
+
+```bash
+wget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | \
+  FORCE_REBUILD="openssl zlib" bash
+```
+
+- `FORCE_REBUILD=all` rebuilds everything.
+- Or delete the stamp: `rm .stamps/openssl-*.done`.
+- `[STALE]`: the install script changed since the build. Not rebuilt unless forced.
+
+## Update
+
+Run the command again: packages with a new version are installed next to the old ones.

@@ -1,0 +1,39 @@
+---
+title: "Usage"
+---
+
+## Enable modules
+
+Add to `~/.bashrc` (replace `~/hpc` with your install directory):
+
+```bash
+source ~/hpc/lmod/9.5/init/bash
+module use ~/hpc/modulefiles
+```
+
+## Load
+
+```bash
+module load hpc-setup       # everything
+module load bioinf-tools    # bioinformatic tools
+module load core-libs       # core libraries
+module load terminal-utils  # terminal tools
+module load samtools        # a single package
+module avail                # list all modules
+```
+
+Legacy Nanopore tools (R9.4.1 / fast5 data) are not in the meta-modules:
+
+```bash
+module load ont-guppy nanopolish
+```
+
+## Directory layout
+
+| Path | Content |
+|------|---------|
+| `NAME/NAME-VERSION/` | installed package |
+| `modulefiles/NAME/VERSION.lua` | module files |
+| `sources/` | downloaded archives |
+| `.stamps/` | finished packages (see [Resume](resume.qmd)) |
+| `install.log` | installation log |

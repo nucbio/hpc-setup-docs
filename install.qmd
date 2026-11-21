@@ -1,0 +1,44 @@
+---
+title: "Install"
+---
+
+## Prerequisites
+
+Needed on the system: `wget`, `unzip`, `tar`, `gzip`, `xz`, `bzip2`, `gcc`, `g++`,
+`gfortran`, `make`, `cmake`, `libxml2`.
+
+Debian/Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install wget unzip tar gzip build-essential cmake gfortran \
+  libxml2-dev libcrypt-dev libuv1-dev
+```
+
+Fedora:
+
+```bash
+sudo dnf install -y wget unzip tar gzip gcc gcc-c++ gcc-gfortran make cmake \
+  libxml2-devel perl perl-core perl-CPAN
+```
+
+Optional, for R plots in X11 windows (local desktop):
+`libx11-dev libxt-dev libxext-dev` (Fedora: `libX11-devel libXt-devel libXext-devel`).
+Without them R is built without X11.
+
+## Run
+
+Start in an empty directory (not `$HOME`):
+
+```bash
+mkdir ~/hpc && cd ~/hpc
+wget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | bash
+```
+
+The build takes hours. On a laptop, prevent sleep first:
+
+```bash
+systemd-inhibit --what=sleep:idle bash
+```
+
+The log is written to `install.log`. If the run stops, see [Resume](resume.qmd).
