@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "usage.html",
+    "href": "usage.html",
+    "title": "Usage",
+    "section": "",
+    "text": "Add to ~/.bashrc (replace ~/hpc with your install directory):\nsource ~/hpc/lmod/9.5/init/bash\nmodule use ~/hpc/modulefiles"
+  },
+  {
+    "objectID": "usage.html#enable-modules",
+    "href": "usage.html#enable-modules",
+    "title": "Usage",
+    "section": "",
+    "text": "Add to ~/.bashrc (replace ~/hpc with your install directory):\nsource ~/hpc/lmod/9.5/init/bash\nmodule use ~/hpc/modulefiles"
+  },
+  {
+    "objectID": "usage.html#load",
+    "href": "usage.html#load",
+    "title": "Usage",
+    "section": "Load",
+    "text": "Load\nmodule load hpc-setup       # everything\nmodule load bioinf-tools    # bioinformatic tools\nmodule load core-libs       # core libraries\nmodule load terminal-utils  # terminal tools\nmodule load samtools        # a single package\nmodule avail                # list all modules\nLegacy Nanopore tools (R9.4.1 / fast5 data) are not in the meta-modules:\nmodule load ont-guppy nanopolish"
+  },
+  {
+    "objectID": "usage.html#directory-layout",
+    "href": "usage.html#directory-layout",
+    "title": "Usage",
+    "section": "Directory layout",
+    "text": "Directory layout\n\n\n\nPath\nContent\n\n\n\n\nNAME/NAME-VERSION/\ninstalled package\n\n\nmodulefiles/NAME/VERSION.lua\nmodule files\n\n\nsources/\ndownloaded archives\n\n\n.stamps/\nfinished packages (see Resume)\n\n\ninstall.log\ninstallation log"
+  },
+  {
+    "objectID": "packages.html",
+    "href": "packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "Load a package with module load NAME."
+  },
+  {
+    "objectID": "packages.html#bioinformatic-tools",
+    "href": "packages.html#bioinformatic-tools",
+    "title": "Packages",
+    "section": "Bioinformatic tools",
+    "text": "Bioinformatic tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbedtools\n2.31.1\nGenome arithmetic utilities\n\n\nbowtie2\n2.5.5\nUltrafast short read aligner\n\n\nbwa-mem2\n2.3\nBWA-MEM2 sequence mapper\n\n\ncutadapt\n5.2\nAdapter trimming tool\n\n\ndeeptools\n4.1.0\nDeep sequencing data analysis tools\n\n\nfastqc\n0.13.0\nSequencing QC tool\n\n\ngatk\n4.7.0.0\nGenome Analysis Toolkit\n\n\nhtslib\n1.25\nHigh-throughput sequencing data library\n\n\nmacs3\n3.1.0\nChIP-Seq peak caller\n\n\npigz\n2.8\nParallel gzip compression\n\n\nsamtools\n1.25\nSAM/BAM/CRAM manipulation tools\n\n\nSTAR\n2.7.11b\nRNA-seq aligner"
+  },
+  {
+    "objectID": "packages.html#nanopore-tools",
+    "href": "packages.html#nanopore-tools",
+    "title": "Packages",
+    "section": "Nanopore tools",
+    "text": "Nanopore tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\ndorado\n2.1.2\nNanopore basecalling\n\n\nduckdb\n2.0.0\nIn-process analytical database\n\n\nmodkit\n0.6.4\nNanopore modified base analysis\n\n\nnanopolish\n0.13.2\nNanopore signal-level analysis (legacy, R9.4.1)\n\n\nont-guppy\n6.5.7\nNanopore basecalling (legacy)\n\n\npod5\n0.3.49\nNanopore POD5 file tools"
+  },
+  {
+    "objectID": "packages.html#languages",
+    "href": "packages.html#languages",
+    "title": "Packages",
+    "section": "Languages",
+    "text": "Languages\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\njava\n25.0.5\nJava runtime and development kit\n\n\nlua\n5.5.1\nLightweight scripting language\n\n\npython\n3.14.10\nGeneral-purpose programming language\n\n\nR\n4.6.2\nStatistical computing and graphics\n\n\nrust\n1.100.0\nSystems programming language"
+  },
+  {
+    "objectID": "packages.html#terminal-tools",
+    "href": "packages.html#terminal-tools",
+    "title": "Packages",
+    "section": "Terminal tools",
+    "text": "Terminal tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbat\n0.26.1\nSyntax highlighting cat replacement\n\n\neza\n0.23.5\nModern ls replacement\n\n\nfd\n10.5.2\nFast file finder\n\n\ngit\n2.56.1\nDistributed VCS\n\n\nnvim\n0.12.6\nModern Vim editor\n\n\nripgrep\n15.2.0\nFast recursive grep\n\n\ntree\n1.3.0\nDirectory listing in tree format\n\n\nzoxide\n0.10.0\nSmart directory navigator"
+  },
+  {
+    "objectID": "packages.html#core-tools",
+    "href": "packages.html#core-tools",
+    "title": "Packages",
+    "section": "Core tools",
+    "text": "Core tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\ngperf\n3.3\nPerfect hash function generator\n\n\ngum\n2.0.2\nShell script TUI framework\n\n\njq\n1.8.2\nCommand-line JSON processor\n\n\npandoc\n3.14\nUniversal document converter\n\n\npkgconf\n3.0.11\nCompile and link flag manager"
+  },
+  {
+    "objectID": "packages.html#core-libraries",
+    "href": "packages.html#core-libraries",
+    "title": "Packages",
+    "section": "Core libraries",
+    "text": "Core libraries\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbzip2\n1.0.8\nLossless block-sorting data compression\n\n\ncairo\n1.18.6\n2D graphics library\n\n\nfontconfig\n2.18.4\nFont configuration library\n\n\nfreetype2\n2.15.0\nFont rendering engine\n\n\nfribidi\n1.0.18\nUnicode bidirectional algorithm library\n\n\ngettext\n1.0\nGNU i18n utilities\n\n\nglib\n2.90.1\nCore utility library\n\n\nharfbuzz\n15.2.0\nText shaping engine\n\n\nlibcurl\n8.23.0\nURL transfer library\n\n\nlibexpat\n2.10.0\nXML parser library\n\n\nlibffi\n3.8.1\nForeign function interface library\n\n\nlibgit2\n1.9.7\nGit library\n\n\nlibjpeg\n3.2.1\nJPEG image codec\n\n\nlibpng\n1.6.59\nPNG image library\n\n\nlibtiff\n4.7.2\nTIFF image format library\n\n\nlibvips\n8.18.7\nImage processing library\n\n\nlibwebp\n1.6.0\nWebP image codec\n\n\nmagick\n7.1.2-36\nImage processing suite\n\n\nncurses\n6.6\nText-based UI library\n\n\nopenssl\n3.6.1\nSSL/TLS cryptographic library\n\n\npcre2\n10.49\nRegular expression library\n\n\nreadline\n8.3\nCommand-line editing library\n\n\nsqlite3\n3.54.1\nEmbedded SQL database engine\n\n\ntcl\n8.6.18\nScripting language for embedded systems\n\n\nxz\n5.8.4\nLZMA data compression\n\n\nzlib\n1.4\nCompression library"
+  },
+  {
+    "objectID": "packages.html#meta-modules",
+    "href": "packages.html#meta-modules",
+    "title": "Packages",
+    "section": "Meta-modules",
+    "text": "Meta-modules\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbioinf-tools\n1.0.0\nBioinformatic tools\n\n\ncore-libs\n1.0.0\nHPC setup - core libraries\n\n\nhpc-setup\n1.0.0\nHPC setup - core stack\n\n\nterminal-utils\n1.0.0\nTerminal utilities"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "hpc-setup",
+    "section": "",
+    "text": "Installs bioinformatic tools and their full software stack into one directory, without root, on Linux (Debian/Ubuntu/RHEL/Fedora, x86_64). Every package is available as an Lmod module.\nmkdir ~/hpc && cd ~/hpc\nwget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | bash\nWhat gets installed:\n\nCore libraries: zlib, openssl, libcurl, cairo, glib, ImageMagick, pandoc, …\nLanguages: R, Python, Rust, Java, Lua\nBioinformatic tools: samtools, bowtie2, STAR, gatk, dorado, modkit, …\nTerminal tools: nvim, git, bat, eza, fd, ripgrep, tree, zoxide\n\nFull list with versions: Packages."
+  },
+  {
+    "objectID": "install.html",
+    "href": "install.html",
+    "title": "Install",
+    "section": "",
+    "text": "Needed on the system: wget, unzip, tar, gzip, xz, bzip2, gcc, g++, gfortran, make, cmake, libxml2.\nDebian/Ubuntu:\nsudo apt update\nsudo apt install wget unzip tar gzip build-essential cmake gfortran \\\n  libxml2-dev libcrypt-dev libuv1-dev\nFedora:\nsudo dnf install -y wget unzip tar gzip gcc gcc-c++ gcc-gfortran make cmake \\\n  libxml2-devel perl perl-core perl-CPAN\nOptional, for R plots in X11 windows (local desktop): libx11-dev libxt-dev libxext-dev (Fedora: libX11-devel libXt-devel libXext-devel). Without them R is built without X11."
+  },
+  {
+    "objectID": "install.html#prerequisites",
+    "href": "install.html#prerequisites",
+    "title": "Install",
+    "section": "",
+    "text": "Needed on the system: wget, unzip, tar, gzip, xz, bzip2, gcc, g++, gfortran, make, cmake, libxml2.\nDebian/Ubuntu:\nsudo apt update\nsudo apt install wget unzip tar gzip build-essential cmake gfortran \\\n  libxml2-dev libcrypt-dev libuv1-dev\nFedora:\nsudo dnf install -y wget unzip tar gzip gcc gcc-c++ gcc-gfortran make cmake \\\n  libxml2-devel perl perl-core perl-CPAN\nOptional, for R plots in X11 windows (local desktop): libx11-dev libxt-dev libxext-dev (Fedora: libX11-devel libXt-devel libXext-devel). Without them R is built without X11."
+  },
+  {
+    "objectID": "install.html#run",
+    "href": "install.html#run",
+    "title": "Install",
+    "section": "Run",
+    "text": "Run\nStart in an empty directory (not $HOME):\nmkdir ~/hpc && cd ~/hpc\nwget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | bash\nThe build takes hours. On a laptop, prevent sleep first:\nsystemd-inhibit --what=sleep:idle bash\nThe log is written to install.log. If the run stops, see Resume."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume and rebuild",
+    "section": "",
+    "text": "If the installation fails, fix the cause and run the same command again in the same directory. Finished packages are skipped ([SKIP]), the failed one is built again."
+  },
+  {
+    "objectID": "resume.html#resume",
+    "href": "resume.html#resume",
+    "title": "Resume and rebuild",
+    "section": "",
+    "text": "If the installation fails, fix the cause and run the same command again in the same directory. Finished packages are skipped ([SKIP]), the failed one is built again."
+  },
+  {
+    "objectID": "resume.html#rebuild",
+    "href": "resume.html#rebuild",
+    "title": "Resume and rebuild",
+    "section": "Rebuild",
+    "text": "Rebuild\nwget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | \\\n  FORCE_REBUILD=\"openssl zlib\" bash\n\nFORCE_REBUILD=all rebuilds everything.\nOr delete the stamp: rm .stamps/openssl-*.done.\n[STALE]: the install script changed since the build. Not rebuilt unless forced."
+  },
+  {
+    "objectID": "resume.html#update",
+    "href": "resume.html#update",
+    "title": "Resume and rebuild",
+    "section": "Update",
+    "text": "Update\nRun the command again: packages with a new version are installed next to the old ones."
+  }
+]
