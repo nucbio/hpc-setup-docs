@@ -7,6 +7,8 @@ project:
 
 website:
   title: "hpc-setup"
+  page-footer:
+    center: "hpc-setup v{{< var version >}}"
   repo-url: https://github.com/nucbio/hpc-setup
   navbar:
     left:
