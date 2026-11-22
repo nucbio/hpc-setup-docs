@@ -17,10 +17,12 @@ This bumps the patch number in `VERSION`, commits and pushes hpc-setup, renders 
 then commits and pushes this repo.
 
 For a release, `-m` bumps minor (1.0.14 -> 1.1.0) and `-M` bumps major (-> 2.0.0);
-both also create and push a git tag for the new version:
+both also create and push a release tag with the current date `YY.MM` (e.g. `26.11`).
+The same name is used for the GitHub release and the release directory on servers
+(`tools/26.11`). One release per month: an existing tag aborts the run.
 
 ```bash
-deploy/git_upload.sh -m "release 1.1.0"
+deploy/git_upload.sh -m "release 26.11"
 ```
 
 ## Preview locally
