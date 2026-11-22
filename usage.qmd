@@ -28,6 +28,23 @@ Legacy Nanopore tools (R9.4.1 / fast5 data) are not in the meta-modules:
 module load ont-guppy nanopolish
 ```
 
+## Terminal tools (Rust)
+
+bat, eza, fd, ripgrep (`rg`), tree and zoxide are built with `cargo install` into
+Rust's shared cargo directory, `rust/rust-VERSION/cargo/bin/` (currently
+`rust-1.100.0`), not into their own directories. Each still has its own module
+file, so it shows up in `module avail` and loads by name. All of these modules
+point to the same directory: loading any one of them puts every tool from it
+on `PATH`, including `rustc` and `cargo`, and `module load rust` makes the
+tools available as well. When Rust is rebuilt or upgraded, the next `boot.sh`
+run rebuilds these tools automatically.
+
+```bash
+module load bat                 # or eza, fd, ripgrep, tree, zoxide
+module load terminal-utils      # all terminal tools, plus git and nvim
+FORCE_REBUILD="bat" ./boot.sh   # rebuild one tool by hand
+```
+
 ## Directory layout
 
 | Path | Content |

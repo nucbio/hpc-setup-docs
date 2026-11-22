@@ -350,6 +350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#enable-modules" id="toc-enable-modules" class="nav-link active" data-scroll-target="#enable-modules">Enable modules</a></li>
   <li><a href="#load" id="toc-load" class="nav-link" data-scroll-target="#load">Load</a></li>
+  <li><a href="#terminal-tools-rust" id="toc-terminal-tools-rust" class="nav-link" data-scroll-target="#terminal-tools-rust">Terminal tools (Rust)</a></li>
   <li><a href="#directory-layout" id="toc-directory-layout" class="nav-link" data-scroll-target="#directory-layout">Directory layout</a></li>
   </ul>
 </nav>
@@ -393,6 +394,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> avail                <span class="co"># list all modules</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Legacy Nanopore tools (R9.4.1 / fast5 data) are not in the meta-modules:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load ont-guppy nanopolish</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="terminal-tools-rust" class="level2">
+<h2 class="anchored" data-anchor-id="terminal-tools-rust">Terminal tools (Rust)</h2>
+<p>bat, eza, fd, ripgrep (<code>rg</code>), tree and zoxide are built with <code>cargo install</code> into Rust’s shared cargo directory, <code>rust/rust-VERSION/cargo/bin/</code> (currently <code>rust-1.100.0</code>), not into their own directories. Each still has its own module file, so it shows up in <code>module avail</code> and loads by name. All of these modules point to the same directory: loading any one of them puts every tool from it on <code>PATH</code>, including <code>rustc</code> and <code>cargo</code>, and <code>module load rust</code> makes the tools available as well. When Rust is rebuilt or upgraded, the next <code>boot.sh</code> run rebuilds these tools automatically.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load bat                 <span class="co"># or eza, fd, ripgrep, tree, zoxide</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load terminal-utils      <span class="co"># all terminal tools, plus git and nvim</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="va">FORCE_REBUILD</span><span class="op">=</span><span class="st">"bat"</span> <span class="ex">./boot.sh</span>   <span class="co"># rebuild one tool by hand</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="directory-layout" class="level2">
 <h2 class="anchored" data-anchor-id="directory-layout">Directory layout</h2>
@@ -962,7 +970,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>hpc-setup v1.0.3</p>
+<p>hpc-setup v1.0.4</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

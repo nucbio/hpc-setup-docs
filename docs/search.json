@@ -21,6 +21,13 @@
     "text": "Load\nmodule load hpc-setup       # everything\nmodule load bioinf-tools    # bioinformatic tools\nmodule load core-libs       # core libraries\nmodule load terminal-utils  # terminal tools\nmodule load samtools        # a single package\nmodule avail                # list all modules\nLegacy Nanopore tools (R9.4.1 / fast5 data) are not in the meta-modules:\nmodule load ont-guppy nanopolish"
   },
   {
+    "objectID": "usage.html#terminal-tools-rust",
+    "href": "usage.html#terminal-tools-rust",
+    "title": "Usage",
+    "section": "Terminal tools (Rust)",
+    "text": "Terminal tools (Rust)\nbat, eza, fd, ripgrep (rg), tree and zoxide are built with cargo install into Rust’s shared cargo directory, rust/rust-VERSION/cargo/bin/ (currently rust-1.100.0), not into their own directories. Each still has its own module file, so it shows up in module avail and loads by name. All of these modules point to the same directory: loading any one of them puts every tool from it on PATH, including rustc and cargo, and module load rust makes the tools available as well. When Rust is rebuilt or upgraded, the next boot.sh run rebuilds these tools automatically.\nmodule load bat                 # or eza, fd, ripgrep, tree, zoxide\nmodule load terminal-utils      # all terminal tools, plus git and nvim\nFORCE_REBUILD=\"bat\" ./boot.sh   # rebuild one tool by hand"
+  },
+  {
     "objectID": "usage.html#directory-layout",
     "href": "usage.html#directory-layout",
     "title": "Usage",
@@ -32,7 +39,7 @@
     "href": "packages.html",
     "title": "Packages",
     "section": "",
-    "text": "Packages in hpc-setup v1.0.3. Versions may change in newer releases.\nLoad a package with module load NAME."
+    "text": "Packages in hpc-setup v1.0.4. Versions may change in newer releases.\nLoad a package with module load NAME."
   },
   {
     "objectID": "packages.html#bioinformatic-tools",
