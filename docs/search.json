@@ -39,7 +39,7 @@
     "href": "packages.html",
     "title": "Packages",
     "section": "",
-    "text": "Packages in hpc-setup v1.0.5. Versions may change in newer releases.\nLoad a package with module load NAME."
+    "text": "Packages in hpc-setup v1.0.6. Versions may change in newer releases.\nLoad a package with module load NAME."
   },
   {
     "objectID": "packages.html#bioinformatic-tools",
