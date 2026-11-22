@@ -13,7 +13,15 @@ With hpc-setup checked out next to this repo, run from hpc-setup:
 deploy/git_upload.sh "commit message"
 ```
 
-This commits and pushes hpc-setup, renders this site, then commits and pushes this repo.
+This bumps the patch number in `VERSION`, commits and pushes hpc-setup, renders this site,
+then commits and pushes this repo.
+
+For a release, `-m` bumps minor (1.0.14 -> 1.1.0) and `-M` bumps major (-> 2.0.0);
+both also create and push a git tag for the new version:
+
+```bash
+deploy/git_upload.sh -m "release 1.1.0"
+```
 
 ## Preview locally
 
