@@ -393,6 +393,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Start in an empty directory (not <code>$HOME</code>):</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> ~/hpc <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> ~/hpc</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO-</span> https://github.com/nucbio/hpc-setup/raw/main/boot.sh <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The build directory can be chosen: the local (install) directory or <code>/tmp</code>, which in some cases may be faster.</p>
 <p>The build takes hours. On a laptop, prevent sleep first:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">systemd-inhibit</span> <span class="at">--what</span><span class="op">=</span>sleep:idle bash</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The log is written to <code>install.log</code>. If the run stops, see <a href="./resume.html">Resume</a>.</p>
@@ -932,7 +933,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>hpc-setup v1.0.8</p>
+<p>hpc-setup v1.0.9</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

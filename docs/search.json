@@ -39,7 +39,7 @@
     "href": "packages.html",
     "title": "Packages",
     "section": "",
-    "text": "Packages in hpc-setup v1.0.8. Versions may change in newer releases.\nLoad a package with module load NAME."
+    "text": "Packages in hpc-setup v1.0.9. Versions may change in newer releases.\nLoad a package with module load NAME."
   },
   {
     "objectID": "packages.html#bioinformatic-tools",
@@ -116,7 +116,7 @@
     "href": "install.html#run",
     "title": "Install",
     "section": "Run",
-    "text": "Run\nStart in an empty directory (not $HOME):\nmkdir ~/hpc && cd ~/hpc\nwget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | bash\nThe build takes hours. On a laptop, prevent sleep first:\nsystemd-inhibit --what=sleep:idle bash\nThe log is written to install.log. If the run stops, see Resume."
+    "text": "Run\nStart in an empty directory (not $HOME):\nmkdir ~/hpc && cd ~/hpc\nwget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | bash\nThe build directory can be chosen: the local (install) directory or /tmp, which in some cases may be faster.\nThe build takes hours. On a laptop, prevent sleep first:\nsystemd-inhibit --what=sleep:idle bash\nThe log is written to install.log. If the run stops, see Resume."
   },
   {
     "objectID": "resume.html",

@@ -35,6 +35,9 @@ mkdir ~/hpc && cd ~/hpc
 wget -qO- https://github.com/nucbio/hpc-setup/raw/main/boot.sh | bash
 ```
 
+The build directory can be chosen: the local (install) directory or `/tmp`,
+which in some cases may be faster.
+
 The build takes hours. On a laptop, prevent sleep first:
 
 ```bash
