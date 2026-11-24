@@ -39,14 +39,14 @@
     "href": "packages.html",
     "title": "Packages",
     "section": "",
-    "text": "Packages in hpc-setup v1.1.2. Versions may change in newer releases.\nLoad a package with module load NAME."
+    "text": "Packages in hpc-setup v1.1.4. Versions may change in newer releases.\nLoad a package with module load NAME."
   },
   {
     "objectID": "packages.html#bioinformatic-tools",
     "href": "packages.html#bioinformatic-tools",
     "title": "Packages",
     "section": "Bioinformatic tools",
-    "text": "Bioinformatic tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbedtools\n2.31.1\nGenome arithmetic utilities\n\n\nbowtie2\n2.5.5\nUltrafast short read aligner\n\n\nbwa-mem2\n2.3\nBWA-MEM2 sequence mapper\n\n\ncutadapt\n5.2\nAdapter trimming tool\n\n\ndeeptools\n4.1.0\nDeep sequencing data analysis tools\n\n\nfastqc\n0.13.0\nSequencing QC tool\n\n\ngatk\n4.7.0.0\nGenome Analysis Toolkit\n\n\nhtslib\n1.25\nHigh-throughput sequencing data library\n\n\nmacs3\n3.1.0\nChIP-Seq peak caller\n\n\nminimap2\n2.31\nLong-read / genomic / spliced sequence aligner (includes k8 and paftools.js)\n\n\npigz\n2.8\nParallel gzip compression\n\n\nsamtools\n1.25\nSAM/BAM/CRAM manipulation tools\n\n\nSTAR\n2.7.11b\nRNA-seq aligner"
+    "text": "Bioinformatic tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbedtools\n2.31.1\nGenome arithmetic utilities\n\n\nbowtie2\n2.5.5\nUltrafast short read aligner\n\n\nbwa-mem2\n2.3\nBWA-MEM2 sequence mapper\n\n\ncutadapt\n5.2\nAdapter trimming tool\n\n\ndeeptools\n4.1.0\nDeep sequencing data analysis tools\n\n\nfastqc\n0.13.0\nSequencing QC tool\n\n\ngatk\n4.7.0.0\nGenome Analysis Toolkit\n\n\nhtslib\n1.25\nHigh-throughput sequencing data library\n\n\nmacs3\n3.1.0\nChIP-Seq peak caller\n\n\nminimap2\n2.31\nLong-read / genomic / spliced sequence aligner (includes k8 and paftools.js)\n\n\nnextflow\n26.10.7\nWorkflow manager for scalable and reproducible pipelines\n\n\npigz\n2.8\nParallel gzip compression\n\n\nsamtools\n1.25\nSAM/BAM/CRAM manipulation tools\n\n\nSTAR\n2.7.11b\nRNA-seq aligner"
   },
   {
     "objectID": "packages.html#nanopore-tools",
