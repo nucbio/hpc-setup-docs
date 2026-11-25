@@ -39,7 +39,7 @@
     "href": "packages.html",
     "title": "Packages",
     "section": "",
-    "text": "Packages in hpc-setup v1.1.4. Versions may change in newer releases.\nLoad a package with module load NAME."
+    "text": "Packages in hpc-setup v1.1.5. Versions may change in newer releases.\nLoad a package with module load NAME."
   },
   {
     "objectID": "packages.html#bioinformatic-tools",
@@ -67,7 +67,7 @@
     "href": "packages.html#terminal-tools",
     "title": "Packages",
     "section": "Terminal tools",
-    "text": "Terminal tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbat\n0.26.1\nSyntax highlighting cat replacement\n\n\neza\n0.23.5\nModern ls replacement\n\n\nfd\n10.5.2\nFast file finder\n\n\ngit\n2.56.1\nDistributed VCS\n\n\nnvim\n0.12.6\nModern Vim editor\n\n\nripgrep\n15.2.0\nFast recursive grep\n\n\ntree\n1.3.0\nDirectory listing in tree format\n\n\nzoxide\n0.10.0\nSmart directory navigator"
+    "text": "Terminal tools\n\n\n\nPackage\nVersion\nDescription\n\n\n\n\nbat\n0.26.1\nSyntax highlighting cat replacement\n\n\neza\n0.23.5\nModern ls replacement\n\n\nfd\n10.5.2\nFast file finder\n\n\ngit\n2.56.1\nDistributed VCS\n\n\nnvim\n0.12.6\nModern Vim editor\n\n\nripgrep\n15.2.0\nFast recursive grep\n\n\ntree\n1.3.0\nDirectory listing in tree format\n\n\ntree-sitter\n0.27.2\nParser generator CLI for nvim-treesitter\n\n\nzoxide\n0.10.0\nSmart directory navigator"
   },
   {
     "objectID": "packages.html#core-tools",
